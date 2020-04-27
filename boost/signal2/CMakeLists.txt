@@ -3,8 +3,10 @@ project(Marco VERSION 0.1.0)
 
 #find_package(TBB CONFIG REQUIRED)
 find_package(Threads REQUIRED)
+find_package(Boost REQUIRED)
+INCLUDE_DIRECTORIES( ${Boost_INCLUDE_DIR} )
 
-add_executable(Marco ./c++17/optional.cpp)
+add_executable(Marco ./advanced.cpp)
 target_compile_options(Marco PRIVATE --std=c++17)
 
 

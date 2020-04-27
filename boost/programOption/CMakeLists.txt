@@ -3,12 +3,14 @@ project(Marco VERSION 0.1.0)
 
 #find_package(TBB CONFIG REQUIRED)
 find_package(Threads REQUIRED)
+find_package(Boost REQUIRED COMPONENTS program_options)
+INCLUDE_DIRECTORIES( ${Boost_INCLUDE_DIR} )
 
-add_executable(Marco ./c++17/optional.cpp)
+add_executable(Marco ./programOption.cpp)
 target_compile_options(Marco PRIVATE --std=c++17)
 
 
-target_link_libraries(Marco PRIVATE Threads::Threads)
+target_link_libraries(Marco PRIVATE Threads::Threads Boost::program_options)
 
 
 

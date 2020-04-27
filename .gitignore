@@ -33,3 +33,4 @@
 
 //ignore the build folder.
 /build/*
+/**/build

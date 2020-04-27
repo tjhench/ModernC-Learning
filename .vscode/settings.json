@@ -55,6 +55,18 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp",
-        "bit": "cpp"
-    }
+        "bit": "cpp",
+        "csignal": "cpp",
+        "bitset": "cpp",
+        "codecvt": "cpp",
+        "complex": "cpp",
+        "set": "cpp",
+        "iomanip": "cpp",
+        "cinttypes": "cpp",
+        "typeindex": "cpp"
+    },
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+    "editor.formatOnSave": true,
+    "C_Cpp.clang_format_style": "file",
+    "C_Cpp.clang_format_fallbackStyle": "none"
 }
